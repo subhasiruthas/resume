@@ -1,0 +1,56 @@
+{
+    "workexp": {
+        "1": {
+            "designation":"LEAD ENGINEER",
+            "company": "Valeo India Pvt Ltd, Chennai",
+            "start": "18 Jan 2022",
+            "end": "present"
+        },
+        "2": {
+            "designation":"SENIOR ENGINEER",
+            "company": "Adecco India Pvt Ltd, Chennai",
+            "start": "09 Jun 2021",
+            "end": "17 Jan 2022"
+        },
+        "3": {
+            "designation":"IT ANALYST",
+            "company": "Tata Consulatncy Services, Chennai",
+            "start": "07 Mar 2013",
+            "end": "18 Aug 2017"
+        }      
+    },
+    "roles": {
+        "1": {
+            "designation":"LEAD ENGINEER",
+            "start": "09 Jun 2021",
+            "end": "09 Jun 2021",
+            "responsibilities": [
+                "Led a team of 4 members in the migration of an existing product from AngularJS to Angular.",
+                "Worked on 7+ products to enhance the new features in the existing apps, utilizing the Google Cloud Platform services.",
+                "Analyzed business requirements and designed solutions using GCP services as GAE, Datastore, Cloud storage, Big Query.",
+                "Conducted regular code reviews and trained team members on software development best practices, resulting in a reduction in bugs and improvement in code quality.",
+                "Worked closely with product management and stakeholders to define and prioritize product features, leading to an increase in customer satisfaction."
+            ]
+        },
+        "2": {
+            "designation":"SENIOR ENGINEER",
+            "start": "09 Jun 2021",
+            "end": "17 Jan 2022",
+            "responsibilities": [
+                "Worked on 5+ products across all phases of development.",
+                "Created and maintained technical documentation, test plans, and user guides, ensuring compliance with internal standards and regulations.",
+                "Collaborated with cross-functional teams - QA to ensure the successful delivery of multiple projects on time."
+            ]
+        },
+        "3": {
+            "designation":"IT ANALYST",
+            "start": "07 Mar 2013",
+            "end": "18 Aug 2017",
+            "responsibilities":[
+                "Worked in Healthcare Domain for Kaiser Permanente (Foundation Systems), healthcare service providers in California Region (USA).",
+                "Coolgen programmer with major expertise in Batch programs.",
+                "Coordinated with Defect prevention and Causal Analysis (DPCA) team for ensuring defects free applications. Conducted analysis with different dev teams and created reports to identify the best practices and adopt the best solutions."
+            ]
+        }
+    }
+}

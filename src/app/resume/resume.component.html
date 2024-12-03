@@ -1,0 +1,13 @@
+<div>
+    <h3 style="text-align: center; padding-top: 10px; margin: 0px;">Hello</h3>
+    <br />
+    <form #loginForm="ngForm" style="text-align: center;">
+        <input matInput type="text" name="username" [(ngModel)]="username" placeholder="Let me know your name?" autofocus
+            required minlength="3">
+        <br />
+        <br />
+        <button mat-raised-button color="primary" (click)="login(loginForm)"
+            [disabled]="!loginForm.valid">Login</button>
+    </form>
+    <br />
+</div>

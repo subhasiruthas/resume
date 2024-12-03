@@ -1,0 +1,14 @@
+{
+    "MBA":{
+        "collegeName":"Madras university",
+        "specialization":"Human Resource Management",
+        "year":"2012-2014",
+        "mode":"Distance education"
+    },
+    "B.Tech":{
+        "collegeName":"Vel multi tech Dr. RR & Dr. SR engineering college",
+        "specialization":"Information Technology",
+        "year":"2008-2012",
+        "mode":"Full time education"
+    }
+}

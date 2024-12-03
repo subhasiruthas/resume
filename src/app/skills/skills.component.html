@@ -1,0 +1,32 @@
+<div>
+    <br />
+    <button mat-flat-button color="primary" (click)="about()">Prev</button>
+    <button mat-flat-button color="primary"  (click)="workexp()" style="float: right;">Next</button>
+    <br />
+</div>
+<div *ngIf="skill$ | async as skillData">
+    <h2>Languages:</h2>
+    <ul>
+        <li *ngFor="let language of skillData.Languages">{{ language }}</li>
+    </ul>
+
+    <h2>Framework:</h2>
+    <ul>
+        <li *ngFor="let framework of skillData.Framework">{{ framework }}</li>
+    </ul>
+
+    <h2>Database:</h2>
+    <ul>
+        <li *ngFor="let db of skillData.Database">{{ db }}</li>
+    </ul>
+
+    <h2>Cloud Platform:</h2><span>{{ skillData['CloudPlatform'] }}</span>
+
+
+    <h2>Tools:</h2>
+    <!-- <p>{{ skillData.Tools }}</p> -->
+    <ul>
+        <li *ngFor="let tool of skillData.Tools">{{ tool }}</li>
+    </ul>
+</div>
+

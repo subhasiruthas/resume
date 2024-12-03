@@ -1,0 +1,49 @@
+<div>
+    <br />
+    <button mat-flat-button color="primary" (click)="gotoskills()">Prev</button>
+    <button mat-flat-button color="primary" (click)="gotoabout()" style="float: right;">End</button>
+</div>
+<div style="display: flex; justify-content: center;">
+    <table style="width: 80%; background-color:khaki">
+        <thead style="background-color: chocolate; text-align: center;">
+            <th>Designation</th>
+            <th>Company</th>
+            <th>Duration</th>
+            <th>Experience</th>
+        </thead>
+        <tbody *ngFor="let work of workexp | keyvalue; let i = index">
+            <tr (mouseover)="isOpen[i] = !isOpen[i]" (mouseout)="isOpen[i] = !isOpen[i]" style="cursor: pointer; height: 50px;">
+                <td>{{work.value.designation}}</td>
+                <td>{{work.value.company}}</td>
+                <td>{{work.value.start}} - {{work.value.end}}</td>
+                <td>{{formatDatesAndCalculateDifference(work.value.start,work.value.end)}}</td>
+            </tr>
+            <tr *ngIf="isOpen[i]" style="background-color: cadetblue;">
+                <td colspan="4">
+                    <h4>{{roles[work.key].designation}}</h4>
+                    <ul *ngFor="let resp of roles[work.key].responsibilities">
+                        <li>{{resp}}
+        
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- <div style="background-color: darkgrey;">
+        <ng-container *ngFor="let role of roles | keyvalue">
+            <h3 style="background-color: darkcyan;">{{role.value.designation}}</h3>
+            <ul *ngFor="let resp of role.value.responsibilities">
+                <li>{{resp}}
+
+                </li>
+            </ul>
+            <br />
+        </ng-container>
+    </div> -->
+</div>
+
+<div>
+    <br />
+    <app-awards></app-awards>
+</div>

@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row style="text-align: center;">
+        <button mat-icon-button class="nav-icon">
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+        <h1>Subha Sirutha</h1>
+        <br/>
+        <h4 style="float: right;"> {{resumeService.loginUser}}</h4>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container hasBackdrop="false">
+    <mat-sidenav #sidenav mode="side">
+        <mat-nav-list>
+            <a mat-list-item routerLink="/about" routerLinkActive="active">About</a>
+            <a mat-list-item routerLink="/skills" routerLinkActive="active">Skills</a>
+            <a mat-list-item routerLink="/workexp" routerLinkActive="active">Work experience</a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content style="background-color:rgb(239, 245, 253);">
+        <div style="height: 88vh; margin: 1%;">
+            
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

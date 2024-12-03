@@ -1,0 +1,28 @@
+<div>
+    <br />
+    <button mat-flat-button color="primary" (click)="skills()" style="float: right;" >Next</button>
+    <br />
+</div>
+<ng-container>
+    <div>
+        <p>Hello {{loginUser}},</p>
+        <p>I'm {{aboutData.name}} coming from {{aboutData.location}}</p>
+        <p>My objective is <strong>{{objective}}</strong></p>
+        <button mat-raised-button color="primary" (click)="academic();">Academic details</button>
+    </div>
+</ng-container>
+<ng-container *ngIf="isSkillClicked">
+    <div>
+        <br />
+        Here is my academic qualification,
+        <div *ngFor="let education of academicsData | keyvalue">
+            <h3>{{ education.key }}</h3>
+            <h4>{{ education.value.specialization }}</h4>
+            <ul>
+                <li><strong>College Name:</strong> {{ education.value.collegeName }}</li>
+                <li><strong>Year:</strong> {{ education.value.year }}</li>
+                <li><strong>Mode:</strong> {{ education.value.mode }}</li>
+            </ul>
+        </div>
+    </div>
+</ng-container>
